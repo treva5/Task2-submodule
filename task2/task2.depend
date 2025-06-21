@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1750517415 source:c:\users\user\onedrive\desktop\programming in c\task2-submodule\task2\main.c
+1750520058 source:c:\users\user\onedrive\desktop\programming in c\task2-submodule\task2\main.c
 	<stdio.h>
+	<stdlib.h>
 
