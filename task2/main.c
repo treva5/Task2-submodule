@@ -1,24 +1,23 @@
 #include <stdio.h>
 
-
-
-
 int main() {
-    float salary, bonus_percentage, bonus;
+    float price, tax_rate, total_cost;
 
-    // Input employee salary and bonus percentage
-    printf("Enter employee salary: ");
-    scanf("%f", &salary);
+    // Assign a fixed tax rate (for example, 15%)
+    tax_rate = 0.1;
 
-    printf("Enter bonus percentage: ");
-    scanf("%f", &bonus_percentage);
+    // Input product price
+    printf("Enter product pre: ");
+    scanf("%f", &price);
 
-    // Calculate bonus
-    bonus = (bonus_percentage / 100) * salary;
+    // Calculate total cost including tax
+    total_cost = price +
 
-    // Display the bonus
-    printf("Employee's Bonus = %.2f\n", bonus);
-    system("pause");
+    // Display the total cost
+    printf("Total Cost including tax = %.2f\n", total_cost);
 
     return 0;
 }
+
+
+
