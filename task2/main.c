@@ -1,22 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h> // Needed for system()
+#include <stdlib.h>
+
+
 
 int main() {
-    float price, discount_percentage, discounted_price;
+     total_ugx;
 
-    // Input original price and discount percentage
-    printf("Enter original price: ");
-    scanf("%f", &price);
+    // Calculate total UGX needed
+    total_ugx = rate_per_usd * usd_amount;
 
-    printf("Enter discount percentage: ");
-    scanf("%f", &discount_percentage);
+    // Display the result
+    printf("UGX needed to buy %.2f USD: %.2f\n", usd_amount, total_ugx);
 
-    // Calculate discounted price
-    discounted_price = price - (price * discount_percentage / 100);
 
-    // Display the discounted price
-    printf("Discounted Price = %.2f\n", discounted_price);
-    system("pause");// This willnow work if you added #include <stdlib.h>
+
+    system("pause");
 
 
     return 0;
