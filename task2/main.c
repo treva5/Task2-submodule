@@ -1,25 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h> // Needed for system()
 
 int main() {
-    float principal, rate, time, interest;
+    float price, discount_percentage, discounted_price;
 
-    // Input principal, rate, and time
-    printf("Enter principal amount: ");
-    scanf("%f", &principal);
+    // Input original price and discount percentage
+    printf("Enter original price: ");
+    scanf("%f", &price);
 
-    printf("Enter interest rate (in percentage): ");
-    scanf("%f", &rate);
+    printf("Enter discount percentage: ");
+    scanf("%f", &discount_percentage);
 
-    printf("Enter time (in years): ");
-    scanf("%f", &time);
+    // Calculate discounted price
+    discounted_price = price - (price * discount_percentage / 100);
 
-    // Calculate simple interest
-    interest = (principal * time * rate) / 100;
-
-    // Display the result
-    printf("Simple Interest = %.2f\n", interest);
-    system ("pause");
+    // Display the discounted price
+    printf("Discounted Price = %.2f\n", discounted_price);
+    system("pause");// This willnow work if you added #include <stdlib.h>
 
 
     return 0;
 }
+
