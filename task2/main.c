@@ -10,7 +10,16 @@ int main() {
     printf("Enter interest rate (in percentage): ");
     scanf("%f", &rate);
 
-    ;
+    printf("Enter time (in years): ");
+    scanf("%f", &time);
+
+    // Calculate simple interest
+    interest = (principal * time * rate) / 100;
+
+    // Display the result
+    printf("Simple Interest = %.2f\n", interest);
+    system ("pause");
+
 
     return 0;
 }
