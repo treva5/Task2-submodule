@@ -1,20 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 
 int main() {
-    float rate_per_usd = 3500.0; // UGX needed for 1 USD
-    float usd_amount = 700.0;    // USD amount to exchange
-    float total_ugx;
+    float salary, bonus_percentage, bonus;
 
-    // Calculate total UGX needed
-    total_ugx = rate_per_usd * usd_amount;
+    // Input employee salary and bonus percentage
+    printf("Enter employee salary: ");
+    scanf("%f", &salary);
 
-    // Display the result
-    printf("UGX needed to buy %.2f USD: %.2f\n", usd_amount, total_ugx);
+    printf("Enter bonus percentage: ");
+    scanf("%f", &bonus_percentage);
+
+    // Calculate bonus
+
+
+    // Display the bonus
+    printf("Employee's Bonus = %.2f\n", bonus);
 
     return 0;
 }
-
-
-
